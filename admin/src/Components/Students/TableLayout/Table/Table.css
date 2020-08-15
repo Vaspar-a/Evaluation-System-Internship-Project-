@@ -1,0 +1,98 @@
+table {
+    position: absolute;
+    top: 0;
+    left: 2vw;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+tr {
+    max-height: 36px;
+    min-width: 36px;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+thead>tr {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(2, 6, 26);
+    color: rgb(250, 244, 226);
+}
+
+tbody>tr:hover {
+    opacity: 0.75;
+}
+
+tbody tr>td, thead tr>th {
+    vertical-align: unset;
+    width: 20vw;
+    max-width: 20vw;
+    height: 36px;
+    min-height: 36px;
+    max-height: 36px;
+    line-height: 5vh;
+    text-align: left;
+    padding-left: 0.5%;
+}
+
+tbody tr>td>p {
+    /* margin: 0px auto; */
+    border: none;
+    outline: none;
+    min-width: 100%;
+    max-width: 7vw;
+    min-height: 36px;
+    overflow: hidden;
+    height: 100%;
+    max-height: 5vh;
+}
+
+tbody tr>td>p:focus {
+    border: 1px ridge rgba(137, 166, 228, 0.719);
+    transform: scale(1.1);
+}
+
+tbody>tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+@media all and (max-width: 1147px) {
+    th {
+        min-width: 15vw;
+        min-height: 5vh;
+    }
+    table {
+        left: 4vw;
+    }
+    .modal {
+        min-width: 50%;
+    }
+}
+
+@media all and (max-width: 673px) {
+    th {
+        min-width: 20vw;
+        min-height: 5vh;
+    }
+}
+
+@media all and (max-width: 673px) {
+    th {
+        min-width: 30vw;
+        min-height: 5vh;
+        font-size: 0.7rem !important;
+    }
+    td>p {
+        font-size: 0.65rem !important;
+    }
+}

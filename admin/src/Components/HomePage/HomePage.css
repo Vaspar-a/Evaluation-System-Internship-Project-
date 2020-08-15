@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button > span {
+    background-color: unset;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-image: url('./notebook\ 1.svg'); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.background-svg {
+    width: 100vw;
+    height: 90vh;
+}
+
+.font-color {
+    background: linear-gradient(to right, #ff9472, #f2709c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#background {
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 95vh;
+    top: 5vh;
+    left: 0;
+}
+
+@keyframes head {
+    from {
+        transform: rotateZ(0deg) translateX(0);
+    }
+    to {
+        transform: rotateZ(-5deg) translateX(-3%);
+    }
+}
+
+#head {
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: head 1.05s linear 0s infinite alternate;
+}
+
+@keyframes righthand {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-5deg);
+    }
+}
+
+#righthand {
+    transform-origin: top;
+    transform-box: fill-box;
+    animation: righthand 1.05s linear 0s infinite alternate;
+}
+
+@keyframes lefthand {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(5deg);
+    }
+}
+
+#lefthand {
+    transform-origin: top;
+    transform-box: fill-box;
+    animation: lefthand 1.05s linear 0s infinite alternate;
+}
+
+@keyframes leftleg {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(-5deg);
+    }
+}
+
+#leftleg {
+    transform-origin: top;
+    transform-box: fill-box;
+    animation: leftleg 1.05s linear 0s infinite alternate;
+}
+
+@keyframes rightleg {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(5deg);
+    }
+}
+
+#rightleg {
+    transform-origin: top;
+    transform-box: fill-box;
+    animation: rightleg 1.05s linear 0s infinite alternate;
+}
+
+@keyframes push-path {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(3%);
+    }
+}
+
+#Vector_53 {
+    animation: push-path 1.05s linear 0s infinite alternate;
+}
+
+@keyframes move-body {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(5deg);
+    }
+}
+
+#Vector_45 {
+    animation: move-body 1.05s linear 0s infinite alternate;
+}
+
+@keyframes rotate-bind {
+    from {
+        transform: rotateY(0deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateY(20deg) rotateZ(0.5deg);
+    }
+}
+
+#Vector_26, #Vector_27, #Vector_28, #Vector_29, #Vector_30, #Vector_31, #Vector_32, #Vector_33, #Vector_34, #Vector_35, #Vector_36 {
+    animation: rotate-bind 1.05s linear 0s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes move-book {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(0.5deg);
+    }
+}
+
+#Vector_25, #Vector_37, #Vector_38, #Vector_39, #Vector_40 {
+    animation: move-book 1.05s linear 0s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rotate-page1 {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: translateX(1%) rotateZ(3deg);
+    }
+}
+
+#page1 {
+    animation: rotate-page1 1.05s linear 0s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rotate-page2 {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(2%);
+    }
+}
+
+#page2 {
+    animation: rotate-page2 1.05s linear 1.05s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+button {
+    width: 100px;
+    height: 45px;
+    font-size: 1rem;
+}
+
+@media all and (max-width: 1336px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media all and (max-width: 1003px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

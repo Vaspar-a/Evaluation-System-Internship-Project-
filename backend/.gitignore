@@ -1,0 +1,7 @@
+.env
+admin.json
+cors.js
+evaluate.json
+pedagogy.json
+students.json
+/node_modules

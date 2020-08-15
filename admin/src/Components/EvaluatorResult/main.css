@@ -1,0 +1,11 @@
+.bodyLayoutResult{
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 5% 1fr 1fr 5%;
+    width: 100%;
+    height: 90vh;
+}
+
+body{
+    overflow: hidden;
+}

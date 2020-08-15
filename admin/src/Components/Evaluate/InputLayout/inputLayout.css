@@ -1,0 +1,360 @@
+@font-face {
+    font-family: PoppinsRegular;
+    src: url('./../../../Fonts/Poppins/Poppins-Regular.ttf');
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url('./../../../Fonts/Poppins/Poppins-Light.ttf');
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: PoppinsBlack;
+    src: url('./../../../Fonts/Poppins/Poppins-SemiBold.ttf');
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+.inputLayoutResult {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.inputLayoutResult input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    width: 15vw;
+    height: 3.5vh;
+    line-height: 3.5vh;
+    border-bottom: 2px solid blue;
+    cursor: text;
+}
+
+#labelCollegeResult {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#labelBranchResult {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    /* margin-left: 20%; */
+}
+
+#labelSemResult {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+#labelSubResult {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    /* margin-left: 20%; */
+}
+
+#labelSubTypeResult {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+#inputCollegeResult {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#inputBranchResult {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    /* margin-left: 20%; */
+}
+
+#inputSemResult {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+#inputSubResult {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    /* margin-left: 20%; */
+}
+
+#inputSubTypeResult {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+#buttonSaveResult {
+    grid-row: 6/7;
+    grid-column: 3/4;
+    justify-self: center;
+}
+
+button {
+    width: 7vw;
+    height: 5vh;
+    border: none;
+    border-radius: 5%;
+    background-color: #04AFF8;
+    box-shadow: 2px 2px rgba(4, 175, 248, 0.575);
+    color: white;
+    outline: none;
+    font-family: PoppinsRegular;
+    font-size: 0.85rem;
+    min-width: 10vw;
+    min-height: 5vh;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+label {
+    height: 3vh;
+    align-self: end;
+    font-family: PoppinsRegular;
+    font-size: 0.85rem;
+}
+
+input, .select, .select>p, .option {
+    font-family: PoppinsLight;
+    font-size: 0.8rem;
+    align-self: start;
+    padding-bottom: 0.5vh;
+    font-weight: 500;
+}
+
+td>input, td>p {
+    font-family: PoppinsLight;
+    font-size: 0.8rem;
+}
+
+th {
+    font-family: PoppinsBlack;
+    font-size: 0.85rem;
+    letter-spacing: 0.05rem;
+}
+
+/* @media all and (max-width: 1300px){
+    .inputLayoutResult{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+@media all and (max-width: 885px){
+    .inputLayoutResult{
+        height: 80%;
+        width: 80%;
+    }
+} */
+
+header li {
+    font-family: PoppinsRegular;
+    font-size: 1.0rem;
+}
+
+.modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px ridge rgba(220, 220, 220, 0.973);
+    border-radius: 10px;
+    outline: none;
+    width: 40vw;
+    height: 30vh;
+    background-color: whitesmoke;
+    transition: transition 1s ease-in-out;
+    z-index: 10;
+}
+
+.modal h2 {
+    font-family: PoppinsLight;
+    font-size: 1.0rem;
+    padding-left: 5%;
+    padding-top: 0.5%;
+    border-bottom: 2px ridge rgb(223, 228, 228);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: red;
+}
+
+.modal svg {
+    position: absolute;
+    width: 2.5vh;
+    height: 2.5vh;
+    top: 3%;
+    right: 1%;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+.modal svg:hover {
+    color: black;
+}
+
+.modal input {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -75%);
+    border: 1px ridge #04AFF8;
+    border-radius: 5px;
+    outline: none;
+}
+
+.modal p {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -75%);
+    font-family: PoppinsRegular;
+    font-size: 0.85rem;
+}
+
+.modal #close {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.modal #ok {
+    position: absolute;
+    bottom: 10%;
+    right: 40%;
+}
+
+.modal .inputContainer {
+    overflow: auto;
+    margin-top: 2%;
+    width: 95%;
+    margin: auto;
+    height: 15vh;
+}
+
+.modal .field {
+    height: 4vh;
+    width: max-content;
+    margin: 3% auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.modal .filterInput {
+    transform: none;
+    position: unset;
+    grid-row: 1;
+    grid-column: 2/3;
+    align-self: center;
+}
+
+.modal .filterPara {
+    transform: none;
+    position: unset;
+    grid-row: 1;
+    grid-column: 1/2;
+    align-self: center;
+}
+
+.modal #save {
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+}
+
+.modal #find {
+    position: absolute;
+    bottom: 4%;
+    right: 40%;
+}
+
+@media all and (max-width: 600px) {
+    body {
+        overflow-y: scroll !important;
+    }
+    .tableLayout {
+        height: 40vh;
+    }
+    .inputLayoutResult {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
+    #labelCollegeResult {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #labelBranchResult {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        /* margin-left: 20%; */
+    }
+    #labelSemResult {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    #labelSubResult {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        /* margin-left: 20%; */
+    }
+    #labelSubTypeResult {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    #inputCollegeResult {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    #inputBranchResult {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        /* margin-left: 20%; */
+    }
+    #inputSemResult {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    #inputSubResult {
+        grid-row: 4/5;
+        grid-column: 2/3;
+        /* margin-left: 20%; */
+    }
+    #inputSubTypeResult {
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+    #buttonSaveResult {
+        grid-row: 8/9;
+        grid-column: 2/3;
+        justify-self: center;
+    }
+    .inputLayoutResult input[type="text"], .select, .select p {
+        width: 35vw;
+        font-size: 0.7rem;
+    }
+    button {
+        width: 20vw;
+    }
+    .modal {
+        min-width: 80%;
+    }
+    .modal #ok {
+        right: 40%;
+    }
+}

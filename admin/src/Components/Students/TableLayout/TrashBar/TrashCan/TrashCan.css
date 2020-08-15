@@ -1,0 +1,15 @@
+.trashCan{
+    width: 2vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.trashCan:hover{
+    background-color: rgba(245, 245, 245, 0.849);
+}
+
+.faTrashAlt{
+    width: 2vw;
+    height: 2vh;
+    margin-top: 1.5vh;
+}

@@ -1,0 +1,106 @@
+.select {
+    /* margin: 20vh 20vw; */
+    /* margin-bottom: 0px; */
+    position: relative;
+    width: 15vw;
+    height: 3.5vh;
+    line-height: 3.5vh;
+    border-bottom: 2px solid blue;
+    /* overflow: hidden; */
+    color: black;
+    cursor: pointer;
+    transition: transform, overflow-y 0.5s linear;
+}
+
+.select p{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 3.5vh;
+    line-height: 3.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.chevron-down {
+    color: blue;
+    position: absolute;
+    line-height: 3.5vh;
+    width: 1.5vw;
+    height: 3.5vh;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    transition: transform 0.3s ease;
+}
+
+.options-box{
+    position: absolute;
+    top: 3.5vh;
+    left: 0;
+    pointer-events: none;
+    /* z-index: -2; */
+    overflow: hidden;
+    height: max-content;
+    width: 100%;
+}
+
+.disable-pointer-events{
+    pointer-events: all;
+    background-color: white;
+    z-index: 2;
+}
+
+.options {
+    width: 100%;
+    height: 15vh;
+    color: black;
+    transition: transform 0.5s ease;
+    transform: translateY(-150%);
+    /* border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#inputCollege .options{
+    height: max-content;
+}
+
+.options::-webkit-scrollbar{
+    width: 3px;
+    height: 2px;
+}
+
+.options::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+
+.options::-webkit-scrollbar-thumb{
+    background-color: #888;
+}
+
+.options::-webkit-scrollbar-thumb:hover{
+    background-color: #555;
+}
+
+.option {
+    width: 100%;
+    height: 3.5vh;
+    margin: 0;
+    padding-left: 1vw;
+    border-bottom: 1px solid blue;
+}
+
+.option:hover {
+    background-color: rgba(75, 129, 245, 0.534);
+}
+
+.show {
+    transform: translateY(0%);
+}

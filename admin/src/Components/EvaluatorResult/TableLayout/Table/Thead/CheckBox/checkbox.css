@@ -1,0 +1,84 @@
+.checkbox{
+    display: inline-block;
+    height: 3vh;
+    margin-right: 3%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.check{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    border: 2px solid #04AFF8;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 5%;
+    z-index: 0;
+    /* background-color: aqua; */
+}
+
+.check-show{
+    width: 100%;
+}
+
+.arrow-rotate{
+    transform: rotate(180deg);
+}
+
+.line-group{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    overflow: hidden;
+    min-width: 0%;
+    width: 0%;
+    height: 100%;
+    /* background-color: burlywood; */
+    /* transform: translateX(-100%); */
+    transition: width, min-width 0.5s ease-in-out;
+}
+
+.line-group-show{
+    min-width: 100%;
+    width: 100%;
+}
+
+.line-1{
+    position: absolute;
+    margin-left: 2px;
+    top: 9px;
+    left: -1px;
+    transform: rotate(0deg); 
+    width: 0px;
+    transition: all 0.3s ease;
+}
+
+.line-2{
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    transform: rotate(0deg); 
+    width: 0px;
+    transition: all 0.3s ease;
+}
+
+.line1-show{
+    background-color: #5BD522;
+    border: 1px solid #5BD522;
+    transform: rotate(45deg) !important;
+    width: 6px !important; 
+}
+
+.line2-show{
+    background-color: #5BD522;
+    border: 1px solid #5BD522;
+    transform: rotate(-48deg) !important;
+    width: 14px !important;
+}
